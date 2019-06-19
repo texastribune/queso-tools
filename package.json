@@ -1,6 +1,6 @@
 {
   "name": "@texastribune/queso-tools",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Node task runners for common front-end tasks",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test:examples": "node examples/",
     "lint": "eslint lib tests",
     "prepublish": "yarn run lint && yarn run test",
-    "publish": "np"
+    "release": "np"
   },
   "files": [
     "lib"
@@ -19,6 +19,9 @@
   },
   "engines": {
     "node": ">=8.11.3"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "browserslist": [
     "> 0.5%",
