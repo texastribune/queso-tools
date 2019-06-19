@@ -97,4 +97,7 @@ Now run `node build.js` in your local environment to fire the build script.
 
 ## Publishing
 
-TBA
+Make sure you're authenticated for npm publishing.
+
+1. `npm login` - then follow the prompts
+2. `npm run release` - There's a [bug](https://github.com/sindresorhus/np/issues/420#issuecomment-499273013) in the `np` publishing tool we use where `yarn` commands don't seem to work.
