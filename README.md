@@ -13,6 +13,13 @@ yarn add @texastribune/queso-tools --dev
 npm install @texastribune/queso-tools --save-dev
 ```
 
+## Tools
+| modules     | params              |
+| ----------- | --------------------|
+| styles      | `dirs`, `manifest`  |
+| icons       | `dirs`              |
+
+
 ## Using these tasks in the wild
 
 Most of the tasks expect an array of directories or files with an input, `in:` key, and output, `out:` key.
