@@ -11,7 +11,7 @@
     "release": "np"
   },
   "files": [
-    "lib"
+    "/lib"
   ],
   "repository": {
     "type": "git",
