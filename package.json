@@ -8,7 +8,7 @@
     "test:examples": "node examples/",
     "lint": "eslint lib tests",
     "prepublish": "yarn run lint && yarn run test",
-    "release": "np"
+    "release": "np --any-branch"
   },
   "files": [
     "/lib"
