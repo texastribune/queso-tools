@@ -75,6 +75,7 @@
     "np": "^5.0.3"
   },
   "dependencies": {
+    "amphtml-validator": "^1.0.23",
     "autoprefixer": "^9.6.0",
     "clean-css": "^4.2.1",
     "fast-glob": "^3.0.1",

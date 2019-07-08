@@ -1,9 +1,15 @@
 const path = require('path');
 const { resolveApp } = require('../lib/utils');
 
-
 const inputPath = file => resolveApp(path.join('examples', 'assets', file));
 const outputPath = file => resolveApp(path.join('dist', file));
+
+const AMP_MAP = [
+  {
+    in: outputPath('sample.css'),
+    out: outputPath('amp-styles.html'),
+  },
+];
 
 const CSS_MAP = [
   {
@@ -14,9 +20,7 @@ const CSS_MAP = [
 
 const SVG_MAP = [
   {
-    in: [
-      inputPath('bug.svg'),
-    ],
+    in: [inputPath('bug.svg')],
     out: outputPath('icons.html'),
   },
   {
@@ -28,6 +32,7 @@ const SVG_MAP = [
 const MANIFEST_FILE = outputPath('styles.json');
 
 module.exports = {
+  AMP_MAP,
   CSS_MAP,
   SVG_MAP,
   MANIFEST_FILE,
