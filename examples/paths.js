@@ -16,7 +16,7 @@ const CSS_MAP = [
   {
     in: inputPath('sample.scss'),
     out: outputPath('sample.css'),
-  }
+  },
 ];
 
 const SVG_MAP = [
