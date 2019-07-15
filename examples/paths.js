@@ -6,8 +6,9 @@ const outputPath = file => resolveApp(path.join('dist', file));
 
 const AMP_MAP = [
   {
-    in: outputPath('sample.css'),
+    in: inputPath('sample.scss'),
     out: outputPath('amp-styles.html'),
+    isAMP: true,
   },
 ];
 
@@ -15,7 +16,7 @@ const CSS_MAP = [
   {
     in: inputPath('sample.scss'),
     out: outputPath('sample.css'),
-  },
+  }
 ];
 
 const SVG_MAP = [
