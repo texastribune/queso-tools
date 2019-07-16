@@ -1,4 +1,4 @@
-const styles = require('../lib/styles');
+const { styles } = require('../lib');
 const { CSS_MAP, MANIFEST_FILE } = require('../examples/paths');
 const { SCSS_SUCCESS } = require('../lib/constants');
 
