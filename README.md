@@ -14,10 +14,13 @@ npm install @texastribune/queso-tools --save-dev
 ```
 
 ## Tools
-| modules     | params              |
-| ----------- | --------------------|
-| styles      | `dirs`, `manifest`  |
-| icons       | `dirs`              |
+| modules     | params    |
+| ----------- | ----------|
+| styles      | `dirs`, `manifest (manifest is optional if you want files with hashed names)`|
+| icons       | `dirs`    |
+| amp         | `dirs`    |
+
+
 
 
 ## Using these tasks in the wild
@@ -36,15 +39,15 @@ const SVG_OUTPUT_DIR = './templates/includes';
 
 const CSS_MAP = [
   {
-    in: [
-      `${SCSS_DIR}/styles.scss`,
-      `${SCSS_DIR}/styles2.scss`,
-    ],
+    in: `${SCSS_DIR}/styles.scss`,
+    out: CSS_OUTPUT_DIR,
+  },
+  {
+    in: `${SCSS_DIR}/styles2.scss`,
     out: CSS_OUTPUT_DIR,
   },
 ];
-
-// Tip: you can mix and match icons from @texastribune/queso-ui and some stored locally
+// The "in" key for icons should be an array; you can mix and match icons from @texastribune/queso-ui and some stored locally
 const SVG_MAP = [
   {
     in: [
@@ -57,13 +60,23 @@ const SVG_MAP = [
   },
 ];
 
+
+const AMP_MAP = [
+  {
+    in: `${SCSS_DIR}/styles.scss`,
+    out: 'amp-include.html',
+  },
+];
+
+// use if you'd like the outputted CSS to have hashed file names
 const MANIFEST_FILE = `${CSS_OUTPUT_DIR}styles.json`;
 
 
 module.exports = {
   CSS_MAP,
   SVG_MAP,
-  MANIFEST_FILE
+  AMP_MAP,
+  MANIFEST_FILE,
 };
 
 ```
@@ -74,8 +87,8 @@ That could look something like the following:
 
 ```js
 // build.js
-const { styles, icons } = require('@texastribune/queso-tools');
-const { CSS_MAP, MANIFEST_FILE, SVG_MAP } = require('./paths');
+const { styles, icons, amp } = require('@texastribune/queso-tools');
+const { CSS_MAP, MANIFEST_FILE, SVG_MAP, AMP_MAP } = require('./paths');
 
 async function build() {
   await styles(CSS_MAP, MANIFEST_FILE);
@@ -83,6 +96,7 @@ async function build() {
   // const stylesArr = await CSS_MAP();
   // await styles(stylesArr, MANIFEST_FILE);
   await icons(SVG_MAP);
+  await amp(AMP_MAP);
 }
 
 build()
