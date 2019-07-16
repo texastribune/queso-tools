@@ -8,7 +8,6 @@ const AMP_MAP = [
   {
     in: inputPath('sample.scss'),
     out: outputPath('amp-styles.html'),
-    isAMP: true,
   },
 ];
 
