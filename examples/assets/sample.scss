@@ -4,3 +4,9 @@ body {
   background-color: $primary;
   margin: 0 !important;
 }
+
+.grid {
+  @supports (display: grid) {
+    display: grid;
+  }
+}
