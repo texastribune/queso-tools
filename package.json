@@ -75,7 +75,6 @@
     "np": "^5.0.3"
   },
   "dependencies": {
-    "@texastribune/postcss-amp": "^1.4.0",
     "amphtml-validator": "^1.0.23",
     "autoprefixer": "^9.6.0",
     "clean-css": "^4.2.1",
@@ -84,6 +83,7 @@
     "node-sass": "^4.12.0",
     "ora": "^4.0.2",
     "postcss": "^7.0.17",
+    "postcss-amp": "^2.0.0",
     "svgo": "^1.2.2",
     "svgstore": "^3.0.0-2"
   }

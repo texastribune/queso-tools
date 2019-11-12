@@ -334,11 +334,6 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@texastribune/postcss-amp@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@texastribune/postcss-amp/-/postcss-amp-1.4.0.tgz#fb96d58eb5707cadf2ae9d10db697752697cae41"
-  integrity sha512-YqYumCnu/8L6awDD5GtSgAv3N8Wsgj7yU4Ipwhqdld4Sw8b2yvoIXMupR4nre2A61JQAOMs+Li7ECkNH2iz40w==
-
 "@types/babel__core@^7.1.0":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.2.tgz#608c74f55928033fce18b99b213c16be4b3d114f"
@@ -4884,6 +4879,11 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+postcss-amp@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-amp/-/postcss-amp-2.0.0.tgz#d6384db3f9b05257e5e4e20027a2ad29fdf4b199"
+  integrity sha512-Irp3kPmOSv305LoSqMqm2ENNFVNGWvC/OSx2F/Snn2kEw4nDwMc0Gc6TSiUA1fjh7e1bdfRxnw4/1rp7RZRwCw==
 
 postcss-value-parser@^4.0.2:
   version "4.0.2"
