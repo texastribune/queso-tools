@@ -7,11 +7,14 @@ This repo accompanies our CSS+icons framework, `queso-ui`. Use the the task runn
 ## Install
 
 ```sh
-yarn add @texastribune/queso-tools --dev
-```
-```sh
 npm install @texastribune/queso-tools --save-dev
 ```
+or
+
+```sh
+yarn add @texastribune/queso-tools --dev
+```
+
 
 ## Tools
 | modules     | params    |
@@ -114,4 +117,4 @@ Now run `node build.js` in your local environment to fire the build script.
 Make sure you're authenticated for npm publishing.
 
 1. `npm login` - then follow the prompts
-2. `npm run release` - There's a [bug](https://github.com/sindresorhus/np/issues/420#issuecomment-499273013) in the `np` publishing tool we use where `yarn` commands don't seem to work.
+2. `npm run release`
