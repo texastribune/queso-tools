@@ -29,6 +29,17 @@ const SVG_MAP = [
   },
 ];
 
+const COPY_MAP = [
+  {
+    in: inputPath('bug.svg'),
+    out: outputPath('copied-file/bug.svg'),
+  },
+  {
+    in: inputPath('icons'),
+    out: outputPath('copied-dir/icons'),
+  },
+];
+
 const MANIFEST_FILE = outputPath('styles.json');
 
 module.exports = {
@@ -36,4 +47,5 @@ module.exports = {
   CSS_MAP,
   SVG_MAP,
   MANIFEST_FILE,
+  COPY_MAP,
 };
