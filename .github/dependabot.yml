@@ -7,3 +7,4 @@ updates:
     time: "11:00"
   labels:
     - "dependencies"
+    - "npm"
