@@ -1,6 +1,6 @@
 {
   "name": "@texastribune/queso-tools",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Node task runners for common front-end tasks",
   "main": "./lib/index.js",
   "scripts": {
