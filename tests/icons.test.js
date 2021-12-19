@@ -10,7 +10,7 @@ it('Builds icons', async () => {
   });
 });
 
-// update test.css if CSS output has intentionally changed
+// update test.svg if SVG output has intentionally changed
 it('SVG sprite is unchanged', async () => {
   const compiledPath = './dist/icons-dir.html';
   const testPath = './tests/files/test.svg';
