@@ -75,6 +75,7 @@
     "np": "^7.0.0"
   },
   "dependencies": {
+    "@texastribune/queso-ui": "^10.3.0",
     "amphtml-validator": "^1.0.23",
     "autoprefixer": "^10.1.0",
     "clean-css": "^4.2.1",

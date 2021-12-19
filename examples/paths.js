@@ -9,6 +9,10 @@ const AMP_MAP = [
     in: inputPath('sample.scss'),
     out: outputPath('amp-styles.html'),
   },
+  {
+    in: inputPath('queso.scss'),
+    out: outputPath('queso-amp-styles.html'),
+  },
 ];
 
 const CSS_MAP = [
@@ -16,6 +20,11 @@ const CSS_MAP = [
     in: inputPath('sample.scss'),
     out: outputPath('sample.css'),
   },
+    {
+    in: inputPath('queso.scss'),
+    out: outputPath('queso.css'),
+  },
+
 ];
 
 const SVG_MAP = [
