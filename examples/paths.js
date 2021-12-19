@@ -20,7 +20,7 @@ const CSS_MAP = [
     in: inputPath('sample.scss'),
     out: outputPath('sample.css'),
   },
-    {
+  {
     in: inputPath('queso.scss'),
     out: outputPath('queso.css'),
   },
