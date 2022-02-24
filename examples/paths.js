@@ -1,17 +1,13 @@
 const path = require('path');
 const { resolveApp } = require('../lib/utils');
 
-const inputPath = file => resolveApp(path.join('examples', 'assets', file));
-const outputPath = file => resolveApp(path.join('dist', file));
+const inputPath = (file) => resolveApp(path.join('examples', 'assets', file));
+const outputPath = (file) => resolveApp(path.join('dist', file));
 
 const AMP_MAP = [
   {
     in: inputPath('sample.scss'),
     out: outputPath('amp-styles.html'),
-  },
-  {
-    in: inputPath('queso.scss'),
-    out: outputPath('queso-amp-styles.html'),
   },
 ];
 
@@ -24,7 +20,6 @@ const CSS_MAP = [
     in: inputPath('queso.scss'),
     out: outputPath('queso.css'),
   },
-
 ];
 
 const SVG_MAP = [
