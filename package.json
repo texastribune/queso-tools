@@ -50,6 +50,9 @@
       ]
     }
   },
+  "jest": {
+    "testTimeout": 10000
+  },
   "prettier": {
     "bracketSpacing": true,
     "printWidth": 80,
