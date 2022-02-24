@@ -78,7 +78,7 @@
   "dependencies": {
     "amphtml-validator": "^1.0.35",
     "autoprefixer": "^10.1.0",
-    "clean-css": "^4.2.1",
+    "clean-css": "^5.2.4",
     "fast-glob": "^3.0.1",
     "fs-extra": "^9.0.0",
     "md5-file": "^5.0.0",
