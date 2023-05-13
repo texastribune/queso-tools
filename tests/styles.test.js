@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jest-environment-node-single-context
+ */
 const fs = require('fs-extra');
 const { styles } = require('../lib');
 const { CSS_MAP, MANIFEST_FILE } = require('../examples/paths');
