@@ -79,7 +79,6 @@
     "np": "^7.0.0"
   },
   "dependencies": {
-    "amphtml-validator": "^1.0.35",
     "autoprefixer": "^10.1.0",
     "clean-css": "^4.2.1",
     "fast-glob": "^3.0.1",
@@ -87,7 +86,6 @@
     "md5-file": "^5.0.0",
     "ora": "^5.1.0",
     "postcss": "^8.2.1",
-    "postcss-amp": "^2.0.0",
     "sass": "^1.45.0",
     "svgo": "^2.7.0"
   }
