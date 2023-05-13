@@ -4,13 +4,6 @@ const { resolveApp } = require('../lib/utils');
 const inputPath = (file) => resolveApp(path.join('examples', 'assets', file));
 const outputPath = (file) => resolveApp(path.join('dist', file));
 
-const AMP_MAP = [
-  {
-    in: inputPath('sample.scss'),
-    out: outputPath('amp-styles.html'),
-  },
-];
-
 const CSS_MAP = [
   {
     in: inputPath('sample.scss'),
@@ -47,7 +40,6 @@ const COPY_MAP = [
 const MANIFEST_FILE = outputPath('styles.json');
 
 module.exports = {
-  AMP_MAP,
   CSS_MAP,
   SVG_MAP,
   MANIFEST_FILE,

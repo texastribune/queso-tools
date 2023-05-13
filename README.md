@@ -21,7 +21,6 @@ yarn add @texastribune/queso-tools --dev
 | ----------- | ----------|
 | styles      | `dirs`, `manifest (manifest is optional if you want files with hashed names)`|
 | icons       | `dirs`    |
-| amp         | `dirs`    |
 | copy        | `dirs`    |
 
 
@@ -64,14 +63,6 @@ const SVG_MAP = [
   },
 ];
 
-
-const AMP_MAP = [
-  {
-    in: `${SCSS_DIR}/styles.scss`,
-    out: 'amp-include.html',
-  },
-];
-
 // copy contents of a directory into another directory
 // and/or copy a directory/file into another-directory/file
 const COPY_MAP = [
@@ -91,7 +82,6 @@ const MANIFEST_FILE = `${CSS_OUTPUT_DIR}styles.json`;
 module.exports = {
   CSS_MAP,
   SVG_MAP,
-  AMP_MAP,
   MANIFEST_FILE,
   COPY_MAP
 };
@@ -104,8 +94,8 @@ That could look something like the following:
 
 ```js
 // build.js
-const { styles, icons, amp, copy } = require('@texastribune/queso-tools');
-const { CSS_MAP, MANIFEST_FILE, SVG_MAP, AMP_MAP, COPY_MAP } = require('./paths');
+const { styles, icons, copy } = require('@texastribune/queso-tools');
+const { CSS_MAP, MANIFEST_FILE, SVG_MAP, COPY_MAP } = require('./paths');
 
 async function build() {
   await styles(CSS_MAP, MANIFEST_FILE);
@@ -113,7 +103,6 @@ async function build() {
   // const stylesArr = await CSS_MAP();
   // await styles(stylesArr, MANIFEST_FILE);
   await icons(SVG_MAP);
-  await amp(AMP_MAP);
   await copy(COPY_MAP);
 }
 
