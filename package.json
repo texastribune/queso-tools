@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --env=node",
     "test:examples": "node examples/",
+    "test:examples-dev": "NODE_ENV=development node examples/",
     "lint": "eslint lib tests",
     "prepublish": "npm run lint && npm run test",
     "release": "np --any-branch"
@@ -24,11 +25,12 @@
     "access": "public"
   },
   "browserslist": [
-    "> 0.5%",
     "last 2 versions",
-    "Firefox ESR",
-    "iOS >= 11",
-    "Safari >= 11",
+    "firefox ESR",
+    "iOS >= 12",
+    "safari >= 12",
+    "samsung >= 12",
+    "not ie 11",
     "not dead"
   ],
   "eslintConfig": {
